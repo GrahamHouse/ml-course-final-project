@@ -36,5 +36,4 @@ Performance is evaluated using 5-fold cross-validation on the user-brand interac
 
 ## Trade-offs
 
-- **Overfitting vs. Generalization**: The low error values suggest good performance, but there is a risk of overfitting to the training data. Cross-validation helps mitigate this, but the model's real-world performance should be monitored.
-- **Complexity vs. Interpretability**: SVD provides good accuracy but is more complex and less interpretable than simpler models like user or item average predictors.
+- **Overfitting vs. Generalization**: The low error values suggest good performance, but there is a risk of overfitting to the training data. Cross-validation may have helped to mitigate this.  It would be worth moitoring perofmrance to ensure that there is a good spread of recommendations and purhaps adjustments may be needed to the model training process to flatten the distribution of recommended brands.  The risk is that the more a single brand is recommended the more they will be interacted with and therefore the more likely they are to be recommended, creating a cycle that would not be good for the platform.
