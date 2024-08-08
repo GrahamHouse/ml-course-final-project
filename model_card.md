@@ -13,17 +13,18 @@ The model uses Singular Value Decomposition (SVD) as implemented in the scikit-s
 
 ## Performance
 
-### Summary Graph or Metrics
+### Summary Metrics
+Cross-validation evaluation of RMSE and MAE over 5 split(s).
+
 | Metric          | Fold 1  | Fold 2  | Fold 3  | Fold 4  | Fold 5  | Mean    | Std    |
 |-----------------|---------|---------|---------|---------|---------|---------|--------|
-| RMSE (testset)  | 0.1859  | 0.1844  | 0.1857  | 0.1849  | 0.1857  | 0.1853  | 0.0006 |
-| MAE (testset)   | 0.1474  | 0.1462  | 0.1468  | 0.1460  | 0.1469  | 0.1467  | 0.0005 |
+| RMSE  | 0.1859  | 0.1844  | 0.1857  | 0.1849  | 0.1857  | 0.1853  | 0.0006 |
+| MAE   | 0.1474  | 0.1462  | 0.1468  | 0.1460  | 0.1469  | 0.1467  | 0.0005 |
 | Fit time        | 6.99    | 6.86    | 7.17    | 6.94    | 6.80    | 6.95    | 0.13   |
 | Test time       | 0.06    | 0.18    | 0.06    | 0.06    | 0.06    | 0.09    | 0.05   |
 
-#### Overall Performance
-- **RMSE**: 0.1853 (Mean), 0.0006 (Std)
-- **MAE**: 0.1467 (Mean), 0.0005 (Std)
+- **RMSE (Test set)**: 0.1578
+- **MAE (Test set)**: 0.1229  
 
 Performance is evaluated using 5-fold cross-validation on the user-brand interaction dataset. The metrics used for evaluation are Root Mean Squared Error (RMSE) and Mean Absolute Error (MAE).
 
