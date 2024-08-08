@@ -1,24 +1,39 @@
-# PROJECT TITLE 
-
+# Brand Recommendation Engine
 
 ## NON-TECHNICAL EXPLANATION OF YOUR PROJECT
-100 words to explain what your project is about to a general audience. 
+This project was designed to create a model for use in recommending brands to users on our network.
 
 ## DATA
-A summary of the data you’re using, remembering to include where you got it and any relevant citations. 
+The data has come from our own database and includes interactions been brands and users over many years.  There are three data files:
+- Brand data
+- User data
+- Interactions data 
 
 ## MODEL 
-A summary of the model you’re using and why you chose it. 
+We are using the SVD model from the scikit-surprise library.  This model was selected from three candidates (SVD, KNN, and NMF) and were evaluated together.  
+
+![Screenshot](comparison_chart.png)
 
 ## HYPERPARAMETER OPTIMSATION
-Description of which hyperparameters you have and how you chose to optimise them. 
+We used a grid search to find the optimal hyperparameters for the SVD model.  These are:
+- n_factors: 50
+- n_epochs: 300
+- lr_all: 0.005
+- reg_all: 0.02
 
 ## RESULTS
-A summary of your results and what you can learn from your model 
+Evaluation of RMSE and MAE over 5 split(s).
 
-You can include images of plots using the code below:
-![Screenshot](image.png)
+| Metric          | Fold 1  | Fold 2  | Fold 3  | Fold 4  | Fold 5  | Mean    | Std    |
+|-----------------|---------|---------|---------|---------|---------|---------|--------|
+| RMSE (testset)  | 0.1859  | 0.1844  | 0.1857  | 0.1849  | 0.1857  | 0.1853  | 0.0006 |
+| MAE (testset)   | 0.1474  | 0.1462  | 0.1468  | 0.1460  | 0.1469  | 0.1467  | 0.0005 |
+| Fit time        | 6.99    | 6.86    | 7.17    | 6.94    | 6.80    | 6.95    | 0.13   |
+| Test time       | 0.06    | 0.18    | 0.06    | 0.06    | 0.06    | 0.09    | 0.05   |
 
-## (OPTIONAL: CONTACT DETAILS)
-If you are planning on making your github repo public you may wish to include some contact information such as a link to your twitter or an email address. 
+**Overall Performance**
 
+- **RMSE**: 0.1578
+- **MAE**: 0.1229  
+
+![Screenshot](evaluation_chart.png)
