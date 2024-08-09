@@ -10,10 +10,10 @@ This project was designed to create a model for use in recommending brands to us
 - *step_6_model_testing.ipynb* - Model Testing and Inference Example
 
 ## DATA
-The data has come from our own database and includes interactions been brands and users over many years.  There are three data files:
-- Brand data
-- User data
-- Interactions data 
+The data has come from our own database and includes interactions between brands and users over many years.  There are three data files:
+- *data/brand_data.csv* - Brand data
+- *data/user_data.csv* - User data
+- *data/interaction_data.csv* - Interactions data 
 
 ## MODEL 
 We are using the SVD model from the scikit-surprise library.  This model was selected from three candidates (SVD, KNN, and NMF) and were evaluated together.  
