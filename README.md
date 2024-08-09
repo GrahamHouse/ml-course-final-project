@@ -1,7 +1,13 @@
 # Brand Recommendation Engine
 
 ## NON-TECHNICAL EXPLANATION OF YOUR PROJECT
-This project was designed to create a model for use in recommending brands to users on our network.
+This project was designed to create a model for use in recommending brands to users on our network.  The code is spread over six Jupyter Notebook files with each file dedicated to a specific step in the model building process.
+- *step_1_data_sanitation.ipynb* - Data Sanitation
+- *step_2_data_exploration.ipynb* - Data Exploration
+- *step_3_data_preparation.ipynb* - Data Preparation
+- *step_4_model_comparison.ipynb* - Model Comparison
+- *step_5_model_training_and_evaluation.ipynb* - Model Training and Evaluation
+- *step_6_model_testing.ipynb* - Model Testing and Inference Example
 
 ## DATA
 The data has come from our own database and includes interactions been brands and users over many years.  There are three data files:
